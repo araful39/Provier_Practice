@@ -16,12 +16,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(providers: [
+    return
+    //   ChangeNotifierProvider(create: (_)=>CounterProvider(),child: GetMaterialApp(
+    //   home: CounterWithProvier(),
+    // ),);
+      MultiProvider(providers: [
       ChangeNotifierProvider(create: (_)=> CounterProvider()),
 
     ],
     child: GetMaterialApp(
-      home: CounterWithProvier(),
+      home: CounterWithProvider(),
     ),
     );
     return GetMaterialApp(

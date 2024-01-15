@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_practice/part-01/model_view/provier_controller/provier_controller.dart';
-class CounterWithProvier extends StatefulWidget {
-  const CounterWithProvier({super.key});
+class CounterWithProvider extends StatefulWidget {
+  const CounterWithProvider({super.key});
 
   @override
-  State<CounterWithProvier> createState() => _CounterWithProvierState();
+  State<CounterWithProvider> createState() => _CounterWithProviderState();
 }
 
-class _CounterWithProvierState extends State<CounterWithProvier> {
+class _CounterWithProviderState extends State<CounterWithProvider> {
   @override
   Widget build(BuildContext context) {
     print("reBuild");
+    final conterPro=Provider.of<CounterProvider>(context,listen: false);
     return Scaffold(
       appBar: AppBar(
         title: Text("Counter With Provier"
@@ -25,7 +26,7 @@ class _CounterWithProvierState extends State<CounterWithProvier> {
       ),),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-          Provider.of<CounterProvider>(context,listen: false).updateCounter();
+conterPro.updateCounter();
         },
         child: Icon(Icons.add),
       ),
