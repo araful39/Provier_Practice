@@ -9,4 +9,13 @@ class ThemeChanger with ChangeNotifier{
     notifyListeners();
   }
 
+
+  TextEditingController emailController=TextEditingController();
+  bool _isTrue=true;
+  bool get isTrue=> _isTrue;
+void setVisibility(){
+  _isTrue=!isTrue;
+  notifyListeners();
+}
+
 }
