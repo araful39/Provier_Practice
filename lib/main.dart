@@ -6,6 +6,7 @@ import 'package:provider_practice/part-01/model_view/provier_controller/provier_
 import 'package:provider_practice/part-01/view/counter_with_getx.dart';
 import 'package:provider_practice/part-01/view/counter_with_provider.dart';
 import 'package:provider_practice/part-01/view/favouriteadd_with_getx.dart';
+import 'package:provider_practice/part-01/view/favouriteadd_with_provider.dart';
 import 'package:provider_practice/part-01/view/favouriteadd_with_setstate.dart';
 import 'package:provider_practice/part-01/view/opacity_color_with_setstat.dart';
 import 'package:provider_practice/part-01/view/opacity_with_getx.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
 
     ],
     child: GetMaterialApp(
-      home: FavouriteWithGetx(),
+      home: FavouriterWithProvider(),
     ),
     );
     return GetMaterialApp(
