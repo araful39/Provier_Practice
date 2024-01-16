@@ -6,7 +6,8 @@ class VisibilityExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final themeChanger = Provider.of<ThemeChanger>(context);
+    final themeChanger = Provider.of<ThemeChanger>(context,listen: false);
+    print("rebuild");
     return Scaffold(
       appBar: AppBar(
         title: Text("Visibility"),
@@ -30,6 +31,7 @@ class VisibilityExample extends StatelessWidget {
                 suffix: InkWell(
                     onTap: (){
                       themeChanger.setVisibility();
+                      print("printe");
                     },
                     child: Icon(themeChanger.isTrue?Icons.visibility:Icons.visibility_off))
               ),
@@ -42,7 +44,7 @@ class VisibilityExample extends StatelessWidget {
             ),
             InkWell(
               onTap: (){
-                // print("Login");
+                print("Login");
               },
               child: Container(
                 height: 50,width: 150,

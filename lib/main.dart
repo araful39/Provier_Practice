@@ -13,6 +13,7 @@ import 'package:provider_practice/part-01/view/opacity_with_getx.dart';
 import 'package:provider_practice/part-01/view/opacity_with_provier.dart';
 import 'package:provider_practice/part-02/provider/theme_changer.dart';
 import 'package:provider_practice/part-02/view/dark_theme.dart';
+import 'package:provider_practice/part-02/view/login_screen.dart';
 import 'package:provider_practice/part-02/view/visibility_example.dart';
 
 
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.red
           )
         ),
-        home: VisibilityExample(),
+        home: LoginScreen(),
       );
     })
     );

@@ -9,6 +9,7 @@ class CounterController extends GetxController {
 
   void increementCounter() {
     counter++;
+    update();
   }
 
   void getOpacity(double val) {
