@@ -44,6 +44,7 @@ class MyApp extends StatelessWidget {
         ),
         themeMode: Provider.of<ThemeChanger>(context).themeMode,
         darkTheme: ThemeData(
+          //raju
 // backgroundColor: Colors.red
         primarySwatch: Colors.red,
             primaryColor: Colors.red,
